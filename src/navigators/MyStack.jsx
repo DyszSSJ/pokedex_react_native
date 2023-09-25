@@ -12,6 +12,7 @@ const Stack = createNativeStackNavigator();
 
 const MyStack = () => {
   const navigation = useNavigation();
+
   return (
     <Stack.Navigator>
       <Stack.Screen

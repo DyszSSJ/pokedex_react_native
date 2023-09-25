@@ -168,17 +168,17 @@ const styles = StyleSheet.create({
   },
 
   textAvatar: {
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: 'bold',
     color: 'black',
     textAlign: 'left',
-    marginVertical: 12,
+    marginVertical: 10,
   },
 
   avatarImage: {
-    width: 100,
-    height: 100,
-    borderRadius: 50,
+    width: 130,
+    height: 130,
+    borderRadius: 100,
   },
 
   button: {

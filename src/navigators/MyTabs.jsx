@@ -15,7 +15,7 @@ const MyTabs = () => {
     <Tab.Navigator
       initialRouteName="Catalogo"
       screenOptions={{
-        tabBarActiveTintColor: '#013a63',
+        tabBarActiveTintColor: '#FF1493',
         tabBarInactiveTintColor: 'gray',
         tabBarStyle: {
           height: 60,

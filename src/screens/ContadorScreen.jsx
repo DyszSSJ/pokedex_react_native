@@ -5,9 +5,10 @@ import {useFavoritos} from '../context/FavoritosContext';
 const ContadorScreen = () => {
   const {favoritos} = useFavoritos();
   return (
-    <View>
-      <Text style={styles.contador}>
-        {favoritos.length} Pokemon{favoritos.length > 1 ? 's' : ''} Favorito
+    <View style={styles.container}>
+      <Text style={styles.contador}>{favoritos.length}</Text>
+      <Text style={styles.contadorText}>
+        Pokemon{favoritos.length > 1 ? 's' : ''} Favorito
         {favoritos.length > 1 ? 's' : ''}
       </Text>
     </View>
@@ -17,10 +18,20 @@ const ContadorScreen = () => {
 export default ContadorScreen;
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+
   contador: {
-    marginTop: 40,
-    fontSize: 25,
+    fontSize: 90,
     fontWeight: 'bold',
+    color: 'black',
+    textAlign: 'center',
+  },
+
+  contadorText: {
+    fontSize: 25,
     color: 'black',
     textAlign: 'center',
   },
